@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: gregflix-client
-          image: gregflix-client:test
-          imagePullPolicy: Never
+          image: registry.home.arpa/gregflix/gregflix-client:dev
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 3000
